@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-floral-white: #F7F4EA;
+  --color-lavender: #DED9E2;
+  --color-periwinkle: #C0B9DD;
+  --color-wisteria: #80A1D4;
+  --color-pearl-aqua: #75C9C8;
+
+  --font-playfair: 'Playfair Display', serif;
+  --font-raleway: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #F7F4EA;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
