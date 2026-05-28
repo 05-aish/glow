@@ -1,10 +1,12 @@
 import React from 'react'
-import HeroText from '../components/HeroText'
+import Hero from '../components/Hero'
+import TipCard from '../components/TipCard'
 
 const Home = () => {
     return (
     <div>
-        <HeroText/>
+        <Hero/>
+        <TipCard/>
     </div>
     )
 }
