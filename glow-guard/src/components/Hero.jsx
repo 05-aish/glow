@@ -8,7 +8,7 @@ import uv9 from '../assets/uv9.png'
 import uv10 from '../assets/uv10.png'
 
 
-const Hero = ({uvLevel = "high", uvIndex = 4 }) => {
+const Hero = ({uvLevel = "high", uvIndex = 7 }) => {
     const gradients = {
         low: "from-[#F7F4EA] to-[#C0B9DD]",
         moderate: "from-[#FFF4D6] to-[#DED9E2]",
@@ -26,29 +26,47 @@ const Hero = ({uvLevel = "high", uvIndex = 4 }) => {
     const selectedImage = images[uvLevel][Math.floor(Math.random() * images[uvLevel].length)];
 
     return (
-        <div className='flex flex-row mt-20 '>
-            <div className='relative shrink-0'>
-                <div className="absolute left-0 top-[94px] z-0 w-[100px] h-[200px] bg-lavender rounded-r-full">
+        <div className='flex flex-col'>
+            <div className='relative shrink-0 flex mt-30 '>
+                <div className="absolute left-0 top-6 z-0 w-[100px] h-[200px] bg-lavender rounded-r-full">
                 </div>
-                <img src={selectedImage} className='mt-16 
+                <img src={selectedImage} className='
                 w-[182px] h-[229px]  
                 object-contain 
                 z-20 
                 relative 
                 drop-shadow-[0_5px_2px_rgba(0,0,0,0.35)]
-                -translate-x-6' alt="" />
+                -translate-x-6' alt="uv illustration" />
 
-                <div className='flex items-baseline gap-1 ml-10 -mt-8 z-30 relative'>
-                    <span className='text-[72px] font-playfair font-semibold text-wisteria leading-none'>
+                <div className='text-left flex items-center mt-4 mr-2 font-playfair font-medium text-[36px]  text-wisteria'>THE SUN ISN'T YOUR FRIEND RN </div>
+            </div>
+
+            
+
+            <div className='ml-13 -mt-16 z-30 relative'>
+
+                <div className='flex items-end'>
+
+                    <span className='
+                        text-[72px]
+                        font-playfair
+                        font-semibold
+                        text-wisteria
+                        leading-none
+                    '>
                         {uvIndex}
                     </span>
-                    <span className='text-sm text-wisteria font-playfair'>
-                        UV Index
+
+                    <span className='
+                        font-playfair
+                        text-xs
+                        uppercase
+                        text-wisteria/80
+                    '>
+                        UV INDEX
                     </span>
                 </div>
             </div>
-            
-            <div className='flex flex-1 text-left justify-center items-center font-playfair font-medium text-[36px]  text-wisteria'>THE SUN ISN'T YOUR FRIEND RN </div>
         </div>
         
     )
