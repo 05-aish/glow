@@ -3,16 +3,16 @@ import chatboticon from '../assets/chatboticon.png';
 
 const Chatbot = () => {
   return (
-    <div className='relative flex mt-[66px] flex-col items-end mr-18'>
+    <div className='relative flex mt-[50px] flex-col items-end mr-4 mb-10'>
 
 
         <img src={chatboticon} alt="chatbot-icon" 
-        className='relative z-10'/>
+        className='relative z-10 drop-shadow-[0_5px_2px_rgba(0,0,0,0.35)]'/>
         
         <div className='
         absolute
         bottom-2
-        right-18
+        right-14
         bg-lavender/30 
         backdrop-blur-md
         text-frost

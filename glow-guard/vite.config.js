@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  server: {
+    allowedHosts: ['totally-cards-diff-department.trycloudflare.com']
+  },
   plugins: [
     react(),
     VitePWA({
@@ -25,7 +28,7 @@ export default defineConfig({
             src: '/icon-512.png',
             sizes: '512x512',
             type: 'image/png'
-          }
+          },
         ]
       }
     })

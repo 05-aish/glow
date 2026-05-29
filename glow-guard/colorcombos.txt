@@ -1,6 +1,3 @@
-@import "tailwindcss";
-
-@theme {
   --color-floral-white: #F7F4EA;
   --color-lavender: #DED9E3;
   --color-periwinkle: #C0B9DD;
@@ -16,14 +13,5 @@
   --color-white-smoke: #F3EDD3;
   --color-wheatfield: #f6ecd1;
 
-  
 
-  --font-playfair: 'Playfair Display', serif;
-  --font-raleway: 'Raleway', sans-serif;
-}
-
-body {
-  background-color: #F7F4EA;
-  font-family: 'Raleway', sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
+  uv moderate: curious blue to lavender, text is white, circle is white
